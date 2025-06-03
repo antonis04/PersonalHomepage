@@ -7,11 +7,11 @@ import { HeaderParagraph } from "../../../../common/Section";
 export const Profile = () => (
   <ProfileContainer>
     <Caption>THIS IS</Caption>
-    <NameHeader>Marcin Osojca</NameHeader>
+    <NameHeader>Antoni Samol</NameHeader>
     <HeaderParagraph>
-      💻⚙️ I'm a React Developer with a background as an Automation Engineer,
-      bringing problem-solving skills to frontend development. Ready to grow and
-      contribute in a dynamic team!
+      💻👨‍💻 I'm a passionate Frontend Developer studying IT & Economics. I'm
+      focused on expanding my portfolio with new projects and courses. Right
+      now, I'm looking for new job opportunities.
     </HeaderParagraph>
     <HireButton href="#contact">
       <EnvelopeSVG />
