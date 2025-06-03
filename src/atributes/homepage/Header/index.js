@@ -6,7 +6,7 @@ import profilePicture from "./../../../assets/profilePic.png";
 
 export const Header = () => (
   <StyledHeader>
-    <Picture src={profilePicture} alt="Marcin" />
+    <Picture src={profilePicture} alt="Antoni" />
     <ThemeSwitcher />
     <Profile />
   </StyledHeader>
