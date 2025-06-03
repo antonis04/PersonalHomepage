@@ -1,16 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { myHomepageReducer } from "../features/Homepage/homepageSlice";
+import { myHomepageReducer } from "./atributes/homepageSlice";
 import rootSaga from "./rootSaga";
 import createSagaMiddleware from "redux-saga";
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
-    reducer: {
-        homepage: myHomepageReducer,
-    },
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(sagaMiddleware),
+  reducer: {
+    homepage: myHomepageReducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(sagaMiddleware),
 });
 
 sagaMiddleware.run(rootSaga);

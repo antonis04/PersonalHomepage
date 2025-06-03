@@ -1,5 +1,5 @@
 import { SocialsList, SocialsItem } from "./styled";
-import { socials } from "../../../../../assets/socials";
+import { socials } from "../../../../assets/mySocials";
 import { Link } from "./styled";
 
 export const Socials = () => (

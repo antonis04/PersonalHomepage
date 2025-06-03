@@ -1,17 +1,17 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
-import { Header } from "./attributes/homepage/Homepage/MainHeader";
-import { MainContainer as Container } from "./common/Container/styled";
-import { Section } from "./attributes/homepage/Homepage/SkillsSection";
+import { Header } from "./atributes/homepage/Header";
+import { MainContainer as Container } from "./common/Container";
+import { MainParagraph as Section } from "./common/Section";
 import { Skills } from "./common/Skills";
-import { skillsList } from "./assets/skillsList";
-import { toLearnList } from "./assets/toLearnList";
-import { Portfolio } from "./attributes/homepage/Homepage/Portfolio";
-import { Footer } from "./attributes/homepage/Homepage/Footer";
+import { skillsList } from "./assets/mySkills";
+import { toLearnList } from "./assets/learnList";
+import { Portfolio } from "./atributes/homepage/Portfolio";
+import { Footer } from "./atributes/homepage/Footer";
 import { ThemeLight, ThemeDark } from "./theme";
-import { selectThemeDark } from "./attributes/homepage/homepageSlice";
+import { selectThemeDark } from "./atributes/homepageSlice";
 import { useSelector } from "react-redux";
-import { useRefreshDisable } from "./useRefreshDisable";
+import { useRefreshDisable } from "./RefreshDisable";
 
 function App() {
   const darkThemeSelected = useSelector(selectThemeDark);

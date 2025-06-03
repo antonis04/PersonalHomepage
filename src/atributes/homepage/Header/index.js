@@ -1,13 +1,13 @@
-import { Profile } from "./Profile";
+import { Profile } from "./MyProfile";
 import { Picture } from "./Picture/styled";
 import { StyledHeader } from "./styled";
-import { ThemeSwitcher } from "./ThemeSwitcher";
-import profilePicture from "./../../../../assets/picture/profile.jpg";
+import { ThemeSwitcher } from "./Switch";
+import profilePicture from "./../../../assets/profilePic.png";
 
 export const Header = () => (
-    <StyledHeader>
-        <Picture src={profilePicture} alt="Marcin" />
-        <ThemeSwitcher />
-        <Profile />
-    </StyledHeader>
+  <StyledHeader>
+    <Picture src={profilePicture} alt="Marcin" />
+    <ThemeSwitcher />
+    <Profile />
+  </StyledHeader>
 );
