@@ -10,14 +10,14 @@ export const LoadingError = () => (
   <LoadingSection>
     <PortfolioHeader />
     <DangerSVG as={Danger} />
-    <ErrorHeader>Ooops! Something went&nbsp;wrong...</ErrorHeader>
+    <ErrorHeader>Ooops! Something went wrong...</ErrorHeader>
     <MainParagraph>
-      Sorry, failed to load Github&nbsp;projects. <br />
-      You can check them directly&nbsp;on&nbsp;Github.
+      Sorry, failed to load Github projects. <br />
+      You can check them directly on Github.
     </MainParagraph>
     <GitHubButton
       href={GitHubPath}
-      title={"Mikoli09 repositories"}
+      title={"antonis04 repositories"}
       target="_blank"
       rel="noopener noreferrer"
     >

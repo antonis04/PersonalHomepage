@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Picture = styled.img`
-  width: 398px;
-  height: 398px;
+  width: 384px;
+  height: 384px;
   border-radius: 50%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
