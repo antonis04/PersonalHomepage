@@ -5,7 +5,7 @@ import { StyleIcon } from "../atributes/homepage/Footer/Socials/styled";
 export const socials = [
   {
     name: "LinkedIn",
-    url: "https://https://www.linkedin.com/in/antoni-samol-44649a368//",
+    url: "https://www.linkedin.com/in/antoni-samol-44649a368/",
     Icon: StyleIcon(LinkedIn),
   },
   {
