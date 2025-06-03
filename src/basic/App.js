@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import { Header } from "../atributes/homepage/Header";
 import { MainContainer as Container } from "../common/Container";
-import { MainParagraph as Section } from "../common/Section";
+import { Section } from "../atributes/homepage/Skills";
 import { Skills } from "../common/Skills";
 import { skillsList } from "../assets/mySkills";
 import { toLearnList } from "../assets/learnList";

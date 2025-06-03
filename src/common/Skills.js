@@ -1,4 +1,4 @@
-import { List, ListItem, MarkerPic } from "../List/styled";
+import { List, ListItem, MarkerPic } from "./List";
 
 export const Skills = ({ list }) => (
   <List>
