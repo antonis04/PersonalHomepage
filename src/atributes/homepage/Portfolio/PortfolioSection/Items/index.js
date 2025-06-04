@@ -9,8 +9,12 @@ export const ProjectItem = ({ project }) => {
     <Project>
       <ProjectName>{name}</ProjectName>
       <Description>{description}</Description>
-      <LinkContainer description={"Demo:"} href={homepage} />
-      <LinkContainer description={"Code:"} href={html_url} />
+      <LinkContainer 
+        description={"Demo:"} 
+        href={homepage} />
+      <LinkContainer 
+      description={"Code:"} 
+      href={html_url} />
     </Project>
   );
 };
