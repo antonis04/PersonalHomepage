@@ -6,7 +6,7 @@ import { SpinnerSVG } from "./styled";
 /**
  * Loading state component with animated spinner
  * Displays loading message and spinner while fetching portfolio data
- * @returns {JSX.Element} Loading component with spinner animation
+ * Output: Loading component with spinner animation
  */
 const LoadingComponent = () => {
   const loadingMessage = "Please wait, projects are being loaded...";

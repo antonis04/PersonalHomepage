@@ -7,7 +7,7 @@ import { HeaderParagraph } from "../../../../common/Section";
 /**
  * User profile display component showing personal information
  * Includes name, description, and hire me button
- * @returns {JSX.Element} Profile display section
+ * Output: Profile display section
  */
 const ProfileDisplay = () => {
   const userIntroduction = "THIS IS";

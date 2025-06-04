@@ -9,7 +9,7 @@ import GitHubPath from "../../../../assets/GitHubPath";
 /**
  * Error state component for portfolio loading failures
  * Displays error message and fallback GitHub link
- * @returns {JSX.Element} Error component with recovery options
+ * Output: Error component with recovery options
  */
 const PortfolioErrorComponent = () => {
   const errorTitle = "Ooops! Something went wrong...";

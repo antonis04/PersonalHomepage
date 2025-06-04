@@ -8,7 +8,7 @@ import { mail } from "../../../assets/email";
 /**
  * Contact footer component with email and social media links
  * Displays invitation to connect and available contact methods
- * @returns {JSX.Element} Footer section with contact information
+ * Output: Footer section with contact information
  */
 const ContactFooter = () => {
   const sectionTitle = "Let's talk!";

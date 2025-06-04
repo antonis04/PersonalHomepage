@@ -5,7 +5,7 @@ import { ExternalLink } from "./styled";
 /**
  * Social media links component
  * Renders a horizontal list of social platform icons with links
- * @returns {JSX.Element} Social media navigation component
+ * Output: Social media navigation component
  */
 const SocialMediaComponent = () => {
   const socialPlatforms = socials;

@@ -8,7 +8,7 @@ import { PortfolioHeader } from "../HeaderSection";
 /**
  * Main portfolio container component displaying GitHub repositories
  * Renders grid of project cards with repository information
- * @returns {JSX.Element} Portfolio container with project grid
+ * Output: Portfolio container with project grid
  */
 export const PortfolioContainer = () => {
   const githubRepositories = useSelector(selectRepositories);

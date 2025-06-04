@@ -7,7 +7,7 @@ import { ProjectsHeaderWrapper } from "./styled";
 /**
  * Portfolio section header component
  * Displays GitHub icon, portfolio title, and description
- * @returns {JSX.Element} Portfolio header with branding
+ * Output: Portfolio header with branding
  */
 const ProjectsHeaderComponent = () => {
   const sectionTitle = "Portfolio";

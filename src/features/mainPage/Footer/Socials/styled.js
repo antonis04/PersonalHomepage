@@ -45,8 +45,8 @@ export const ExternalLink = styled.a`
 /**
  * Higher-order component for styling social media icons
  * Applies consistent sizing and responsive behavior
- * @param {React.Component} Icon - The icon component to style
- * @returns {styled.Component} Styled icon component
+ * Input: Icon - The icon component to style
+ * Output: Styled icon component
  */
 export const StyledSocialIcon = (Icon) => styled(Icon)`
   height: auto;

@@ -2,7 +2,7 @@ import { SkillsList, SkillItem, BulletPoint } from "./List";
 
 /**
  * Skills component that renders a list of technical skills
- * @param {Array} list - Array of skill strings to display
+ * Input: list - Array of skill strings to display
  */
 export const Skills = ({ list }) => (
   <SkillsList>

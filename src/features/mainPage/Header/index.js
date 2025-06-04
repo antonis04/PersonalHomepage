@@ -7,7 +7,7 @@ import userAvatar from "./../../../assets/profilePic.png";
 /**
  * Main header component for the personal homepage
  * Contains user avatar, profile information, and theme switcher
- * @returns {JSX.Element} Rendered header component
+ * Output: Rendered header component
  */
 const HeaderComponent = () => {
   return (
