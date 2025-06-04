@@ -1,47 +1,81 @@
-import { Project } from "./styled";
-import { Description, ProjectName } from "./styled";
-import { LinkContainer } from "../Links";
+// Repository card component for displaying GitHub project information
+import { RepositoryCard } from "./styled";
+import { ProjectDescription, RepositoryTitle } from "./styled";
+import { UrlDisplayComponent } from "../Links";
 
-export const ProjectItem = ({ project }) => {
-  const { name, description, homepage, html_url, owner, fork, private: isPrivate, has_pages } = project;
+export const RepositoryDisplayItem = ({ repoData }) => {
+  const {
+    name: repositoryName,
+    description: repoDescription,
+    homepage: homepageUrl,
+    html_url: sourceCodeUrl,
+    owner: repoOwner,
+    fork: isFork,
+    private: isPrivateRepo,
+    has_pages: hasGitHubPages,
+  } = repoData;
 
-  // Helper function to check if repository likely has a deployable web project
-  const isLikelyWebProject = (repoName, repoDescription) => {
-    const webIndicators = [
-      'website', 'portfolio', 'homepage', 'app', 'site', 'web', 'react', 'vue', 'angular', 
-      'html', 'css', 'javascript', 'frontend', 'ui', 'ux', 'bootstrap', 'landing'
+  /**
+   * Determines if a repository contains a deployable web application
+   * based on repository name and description keywords
+   */
+  const checkIfWebApplication = (repositoryName, repositoryDescription) => {
+    const webProjectKeywords = [
+      "website",
+      "portfolio",
+      "homepage",
+      "app",
+      "site",
+      "web",
+      "react",
+      "vue",
+      "angular",
+      "html",
+      "css",
+      "javascript",
+      "frontend",
+      "ui",
+      "ux",
+      "bootstrap",
+      "landing",
     ];
-    
-    const nameAndDesc = `${repoName} ${repoDescription || ''}`.toLowerCase();
-    return webIndicators.some(indicator => nameAndDesc.includes(indicator)) || 
-           repoName.includes('.github.io');
+
+    const combinedText = `${repositoryName} ${
+      repositoryDescription || ""
+    }`.toLowerCase();
+    const hasWebKeywords = webProjectKeywords.some((keyword) =>
+      combinedText.includes(keyword)
+    );
+    const isGitHubPagesRepo = repositoryName.includes(".github.io");
+
+    return hasWebKeywords || isGitHubPagesRepo;
   };
 
-  // Generate demo URL with intelligent filtering
-  let demoUrl = homepage; // Always use homepage if explicitly set
-  
-  // Only generate GitHub Pages URL if:
-  // 1. No custom homepage is set
-  // 2. Repository is not a fork and not private
-  // 3. Either GitHub Pages is enabled OR repository appears to be a web project
-  if (!demoUrl && !fork && !isPrivate && owner && owner.login) {
-    if (has_pages || isLikelyWebProject(name, description)) {
-      demoUrl = `https://${owner.login}.github.io/${name}/`;
+  // Build live demo URL based on available information
+  let liveUrl = homepageUrl;
+
+  /**
+   * Generate GitHub Pages URL when:
+   * - No custom homepage URL exists
+   * - Repository is public and not forked
+   * - Either has GitHub Pages enabled or appears to be a web project
+   */
+  if (!liveUrl && !isFork && !isPrivateRepo && repoOwner?.login) {
+    const shouldGenerateUrl =
+      hasGitHubPages || checkIfWebApplication(repositoryName, repoDescription);
+    if (shouldGenerateUrl) {
+      liveUrl = `https://${repoOwner.login}.github.io/${repositoryName}/`;
     }
   }
 
   return (
-    <Project>
-      <ProjectName>{name}</ProjectName>
-      <Description>{description}</Description>
-      {demoUrl && (
-        <LinkContainer 
-          description={"Demo:"} 
-          href={demoUrl} />
+    <RepositoryCard>
+      <RepositoryTitle>{repositoryName}</RepositoryTitle>
+      <ProjectDescription>{repoDescription}</ProjectDescription>
+      {liveUrl && (
+        <UrlDisplayComponent linkLabel={"Demo:"} targetUrl={liveUrl} />
       )}
-      <LinkContainer 
-        description={"Code:"} 
-        href={html_url} />
-    </Project>
+      <UrlDisplayComponent linkLabel={"Code:"} targetUrl={sourceCodeUrl} />
+    </RepositoryCard>
   );
 };
