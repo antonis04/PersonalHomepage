@@ -1,7 +1,9 @@
 export const toLearnList = [
-    "TypeScript",
-    "Node.js",
-    "Vue.js",
-    "Cypress",
-    "Python",
+    "Python Data Science",
+    "Machine Learning",
+    "Deep Learning",
+    "Advanced Java",
+    "R studio",
+    "C++",
+    "C"
 ]
