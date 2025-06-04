@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ProjectName } from "../PortfolioSection/Items/styled";
+import { RepositoryTitle } from "../ProjectsContainer/RepoCards/styled";
 import { HireButton } from "../../Header/MyProfile/hireMe";
 
 export const DangerSVG = styled.svg`
@@ -13,7 +13,7 @@ export const DangerSVG = styled.svg`
   }
 `;
 
-export const ErrorHeader = styled(ProjectName)`
+export const ErrorHeader = styled(RepositoryTitle)`
   text-align: center;
   color: ${({ theme }) => theme.colors.header.text};
 `;

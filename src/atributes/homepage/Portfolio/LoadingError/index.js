@@ -1,11 +1,14 @@
 import { LoadingSection } from "../styled";
-import { PortfolioHeader } from "../PortfolioHeader";
+import { PortfolioHeader } from "../HeaderSection";
 import { MainParagraph } from "../../../../common/Section";
 import { DangerSVG, ErrorHeader } from "./styled";
 import { GitHubButton } from "./styled";
 import { ReactComponent as Danger } from "../../../../assets/svg/danger.svg";
 import GitHubPath from "../../../../assets/GitHubPath";
 
+/**
+ * Error state component displayed when GitHub API fails
+ */
 export const LoadingError = () => (
   <LoadingSection>
     <PortfolioHeader />

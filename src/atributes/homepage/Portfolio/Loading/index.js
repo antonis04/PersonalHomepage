@@ -1,8 +1,11 @@
 import { MainParagraph } from "../../../../common/Section";
 import { LoadingSection } from "../styled";
-import { PortfolioHeader } from "../PortfolioHeader";
+import { PortfolioHeader } from "../HeaderSection";
 import { SpinnerSVG } from "./styled";
 
+/**
+ * Loading state component with animated spinner
+ */
 export const Loading = () => (
   <LoadingSection>
     <PortfolioHeader />

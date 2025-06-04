@@ -2,18 +2,21 @@ import { PortfolioSection } from "../styled";
 import { PortfolioList } from "../styled";
 import { useSelector } from "react-redux";
 import { selectRepositories } from "../../../homepageSlice";
-import { ProjectItem } from "./Items";
+import { RepositoryDisplayItem } from "./Items";
 import { PortfolioHeader } from "../PortfolioHeader";
 
+/**
+ * Main portfolio section component that displays all repositories
+ */
 export const PortfolioContainer = () => {
-  const repositories = useSelector(selectRepositories);
+  const githubRepositories = useSelector(selectRepositories);
 
   return (
     <PortfolioSection>
       <PortfolioHeader />
       <PortfolioList>
-        {repositories.map((project, index) => (
-          <ProjectItem key={index} project={project} />
+        {githubRepositories.map((repositoryData, idx) => (
+          <RepositoryDisplayItem key={idx} repoData={repositoryData} />
         ))}
       </PortfolioList>
     </PortfolioSection>
