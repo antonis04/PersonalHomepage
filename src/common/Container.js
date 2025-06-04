@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Main content wrapper with responsive design
 export const MainContainer = styled.main`
   max-width: 1216px;
   min-width: 300px;
