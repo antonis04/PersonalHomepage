@@ -1,14 +1,15 @@
-import { StyledLinkContainer, ProjectDescription, ProjectLink } from "./styled";
+import { LinkWrapper, LinkLabel, ExternalLink } from "./styled";
 
-export const LinkContainer = ({ href, description }) => (
-    <StyledLinkContainer>
-        <ProjectDescription>{description}</ProjectDescription>
-        <ProjectLink
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            {href}
-        </ProjectLink>
-    </StyledLinkContainer>
+/**
+ * Displays a labeled external link for repository URLs
+ * @param {string} targetUrl - The URL to link to
+ * @param {string} linkLabel - The descriptive label for the link
+ */
+export const UrlDisplayComponent = ({ targetUrl, linkLabel }) => (
+  <LinkWrapper>
+    <LinkLabel>{linkLabel}</LinkLabel>
+    <ExternalLink href={targetUrl} target="_blank" rel="noopener noreferrer">
+      {targetUrl}
+    </ExternalLink>
+  </LinkWrapper>
 );

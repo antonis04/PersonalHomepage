@@ -1,22 +1,25 @@
 import styled from "styled-components";
 import { Link } from "../../../Footer/Socials/styled";
-import { Description } from "../Items/styled";
+import { ProjectDescription } from "../Items/styled";
 
-export const ProjectDescription = styled(Description)`
+// Label for the link (Demo:, Code:, etc.)
+export const LinkLabel = styled(ProjectDescription)`
   margin: 0;
+  font-weight: 500;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 14px;
   }
 `;
 
-export const ProjectLink = styled(Link)`
+// Styled external link with hover effects
+export const ExternalLink = styled(Link)`
   display: inline;
   word-break: break-all;
   color: ${({ theme }) => theme.colors.anchor.text};
   width: auto;
-  transition: 0;
-  text-decoration: underline solid;
+  transition: all 0.2s ease;
+  text-decoration: underline solid 1px;
   text-decoration-color: ${({ theme }) => theme.colors.link.text};
 
   &:hover {
@@ -30,16 +33,14 @@ export const ProjectLink = styled(Link)`
   }
 `;
 
-export const StyledLinkContainer = styled.div`
+// Container for link and label
+export const LinkWrapper = styled.div`
   display: grid;
   align-items: baseline;
   grid-gap: 8px;
   grid-template-columns: auto 1fr;
-  margin-top: 8px;
-  margin-bottom: 0;
+  margin: 0 0 16px 0;
   width: 100%;
-  margin-top: 0;
-  margin-bottom: 16px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
