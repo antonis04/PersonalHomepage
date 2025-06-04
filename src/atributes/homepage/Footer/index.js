@@ -16,9 +16,7 @@ export const Footer = () => (
       {mail}
     </FooterEmail>
     <FooterParagraph>
-      I'm always excited to work on new projects! If you need a website, a
-      dashboard, or a mobile app, I can help bring your ideas to life. Get in
-      touch, and let's create something great together!
+      I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to contact me 😊
     </FooterParagraph>
     <Socials />
   </StyledFooter>
