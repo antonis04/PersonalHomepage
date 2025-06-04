@@ -9,10 +9,11 @@ export const PortfolioHeaderText = styled(SectionHeader)`
   text-align: center;
   border-bottom: none;
   padding: 12px 0 8px 0;
-  margin: 0;
+  margin: 0 0 24px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     padding: 12px 0 16px 0;
+    margin: 0 0 16px 0;
   }
 `;
 

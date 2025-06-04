@@ -4,8 +4,8 @@ import { ReactComponent as Marker } from "../assets/svg/marker.svg";
 export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px 115px;
-  padding: 32px 0;
+  gap: 8px 32px;
+  padding: 0;
   margin: 0;
   list-style: none;
   text-align: left;
@@ -19,7 +19,7 @@ export const List = styled.ul`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
-    padding: 12px 0 16px 0;
+    padding: 0;
   }
 `;
 
