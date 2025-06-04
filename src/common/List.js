@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { ReactComponent as Marker } from "../assets/svg/marker.svg";
 
-export const List = styled.ul`
+// Grid layout for skills list
+export const SkillsList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px 32px;
@@ -23,7 +24,8 @@ export const List = styled.ul`
   }
 `;
 
-export const ListItem = styled.li`
+// Individual skill item with bullet point
+export const SkillItem = styled.li`
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -35,7 +37,8 @@ export const ListItem = styled.li`
   }
 `;
 
-export const MarkerPic = styled(Marker)`
+// Styled bullet point marker
+export const BulletPoint = styled(Marker)`
   margin-right: 16px;
   fill: ${({ theme }) => theme.colors.marker.fill};
 `;

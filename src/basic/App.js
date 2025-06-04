@@ -1,15 +1,15 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
-import { Header } from "../atributes/homepage/Header";
+import { Header } from "../features/mainPage/Header";
 import { MainContainer as Container } from "../common/Container";
-import { Section } from "../atributes/homepage/Skills";
+import { Section } from "../features/mainPage/TechnicalSkills";
 import { Skills } from "../common/Skills";
 import { skillsList } from "../assets/mySkills";
 import { toLearnList } from "../assets/learnList";
-import { Portfolio } from "../atributes/homepage/Portfolio";
-import { Footer } from "../atributes/homepage/Footer";
+import { Portfolio } from "../features/mainPage/Portfolio";
+import { Footer } from "../features/mainPage/Footer";
 import { ThemeLight, ThemeDark } from "./theme";
-import { selectThemeDark } from "../atributes/homepageSlice";
+import { selectThemeDark } from "../features/homepageSlice";
 import { useSelector } from "react-redux";
 import { useRefreshDisable } from "../RefreshDisable";
 

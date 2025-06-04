@@ -1,12 +1,16 @@
-import { List, ListItem, MarkerPic } from "./List";
+import { SkillsList, SkillItem, BulletPoint } from "./List";
 
+/**
+ * Skills component that renders a list of technical skills
+ * @param {Array} list - Array of skill strings to display
+ */
 export const Skills = ({ list }) => (
-  <List>
-    {list.map((skill, index) => (
-      <ListItem key={index}>
-        <MarkerPic />
-        {skill}
-      </ListItem>
+  <SkillsList>
+    {list.map((skillName, skillIndex) => (
+      <SkillItem key={skillIndex}>
+        <BulletPoint />
+        {skillName}
+      </SkillItem>
     ))}
-  </List>
+  </SkillsList>
 );
