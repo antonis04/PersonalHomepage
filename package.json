@@ -2,7 +2,7 @@
   "name": "personal-homepage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://antoniso4.github.io/personal-homepage",
+  "homepage": "https://antoniso4.github.io/PersonalHomepage",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@testing-library/dom": "^10.4.0",
