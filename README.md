@@ -40,7 +40,7 @@ Here are the technologies I used to build my portfolio:
 
 ### Demo:
 
-🌐 **Live Site**: Check out the live version of my portfolio [here](https://antonis04.github.io/personal-homepage/)
+🌐 **Live Site**: Check out the live version of my portfolio [here](https://antonis04.github.io/PersonalHomepage/)
 
 ### Getting Started:
 
