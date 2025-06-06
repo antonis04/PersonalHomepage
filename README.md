@@ -4,7 +4,7 @@ Welcome to my **Personal Homepage**! 🚀
 This is where you can explore my skills, the projects I've worked on, and the technologies I'm excited to learn.  
 Feel free to browse, and don't hesitate to reach out if you'd like to collaborate or chat!
 
-![Homepage Demo](public/resources/personalHomepage.mp4)
+![Homepage Demo](public/resources/personalHomepage.gif)
 
 ## Table of Contents
 
